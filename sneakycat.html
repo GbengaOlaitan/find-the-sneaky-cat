@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneaky Cats</title>
+    <link rel="stylesheet" href="sneakycat.css">
+  </head>
+  <body>
+    <div class="game-body">
+      <header>
+        <h1 class="game-head">Find the Sneaky Cat</h1>
+      </header>
+      <main>
+        <p class="instruction">The cat is hiding in one of the houses guess which one</p>
+        <div class="button-container">
+          <button class="js-yourmove-button houses" onclick="yourMove(1)">
+            <img class="button-img" src="images/house1.png" alt="">
+          </button>
+          <button class="js-yourmove-button houses" onclick="yourMove(2)">
+            <img class="button-img" src="images/house2.png" alt="">
+          </button>
+          <button class="js-yourmove-button houses" onclick="yourMove(3)">
+            <img class="button-img" src="images/house3.png" alt="">
+          </button>
+          <button class="js-yourmove-button houses" onclick="yourMove(5)">
+            <img class="button-img" src="images/house4.png" alt="">
+          </button>
+          <button class="js-yourmove-button houses" onclick="yourMove(5)">
+            <img class="button-img" src="images/house5.png" alt="">
+          </button>
+        </div>
+        <div class="play-again-container">
+          <button class="play-again" onclick="playAgain()">Play Again</button>
+          <p class="js-cat-message cat-message"></p>
+          <p class="js-tries-left trial">3</p>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="sneakycat.js"></script>
+  </body>
+</html>
